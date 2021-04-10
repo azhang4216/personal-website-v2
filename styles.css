@@ -1,7 +1,77 @@
 :root {
-
+    --white: #FFFFFF;
+    --black: #000000;
+    --primary: #EDC7B7;
+    --secondary: #BAB2B5;
+    --bg: #EEE2DC;
+    --active: #123C69;
+    --hover: #AC3B61;
 }
 
-p {
-    color: red
+html {
+    font-family: 'Indie Flower';
+    background-color: var(--bg);
+}
+
+/* Navbar */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: x-large;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: var(--secondary);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: var(--black);
+}
+
+.active {
+    color: var(--black);
+    border-bottom: 3px solid var(--active);
+    padding-bottom: 3px;
+}
+
+/* Home Page */
+.center {
+    font-size: 5vh;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 7vh;
+    width: 7vh;
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 100%;
+    font-size: 3.5vh;
+    margin-right: 3.5vh;
+}
+
+.social-icons .social-icon:last-child {
+    margin-right: 0;
+}
+
+.social-icons .social-icon:hover {
+    background-color: var(--hover);
 }
